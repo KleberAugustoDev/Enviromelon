@@ -276,7 +276,7 @@ margin-left: 40px;
 	height: 30px;
 	width: 30px;
 	margin-top: 0;
-	padding-right: 0;
+	padding-right: 10px;
 	vertical-align: -8px;
 }
 
@@ -325,10 +325,16 @@ margin-left: 40px;
 }
 
 #transpotext p::before {
-	content: url(./Ativos/Bullet.svg);
-	margin-top: 30px;
-	padding-right: 30px;
-	vertical-align: -20%;
+	display: inline-flex;
+	content: "";
+	background-image: url("./Ativos/Bullet.svg");
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	height: 30px;
+	width: 30px;
+	margin-top: 0;
+	padding-right: 10px;
+	vertical-align: -8px;
 }
 
 #transpoimg {
@@ -406,7 +412,7 @@ margin-left: 40px;
 	height: 30px;
 	width: 30px;
 	margin-top: 0;
-	padding-right: 0;
+	padding-right: 10px;
 	vertical-align: -8px;
 }
 
@@ -867,11 +873,11 @@ footer {
 		content: "";
 		background-image: url("./Ativos/Bullet.svg");
 		background-repeat: no-repeat;
-		background-size: 30px 30px;
-		height: 30px;
-		width: 30px;
+		background-size: 20px 20px;
+		height: 20px;
+		width: 20px;
 		margin-top: 0;
-		padding-right: 0;
+		padding-right: 10px;
 		vertical-align: -8px;
 	}
 
@@ -910,11 +916,11 @@ footer {
 		content: "";
 		background-image: url("./Ativos/Bullet.svg");
 		background-repeat: no-repeat;
-		background-size: 30px 30px;
-		height: 30px;
-		width: 30px;
+		background-size: 20px 20px;
+		height: 20px;
+		width: 20px;
 		margin-top: 0;
-		padding-right: 0;
+		padding-right: 10px;
 		vertical-align: -8px;
 	}
 
@@ -1002,11 +1008,11 @@ footer {
 		content: "";
 		background-image: url("./Ativos/Bullet.svg");
 		background-repeat: no-repeat;
-		background-size: 30px 30px;
-		height: 30px;
-		width: 30px;
+		background-size: 20px 20px;
+		height: 20px;
+		width: 20px;
 		margin-top: 0;
-		padding-right: 0;
+		padding-right: 10px;
 		vertical-align: -8px;
 	}
 
