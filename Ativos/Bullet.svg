@@ -1,33 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   width="78.293831mm"
-   height="51.248646mm"
-   viewBox="0 0 78.293831 51.248646"
-   version="1.1"
-   id="svg1"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs1">
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath84-8-3">
-      <path
-         d="M 0,792 H 1224 V 0 H 0 Z"
-         transform="translate(-927.4291,-494.04981)"
-         id="path84-0-6" />
-    </clipPath>
-  </defs>
-  <g
-     id="layer1"
-     transform="translate(-93.008016,-82.961802)">
-    <path
-       id="path83"
-       d="m 0,0 c 0,-0.995 0.675,-1.802 1.451,-1.802 0.775,0 1.45,0.807 1.45,1.802 0,0.995 -0.7795709,3.098 -1.45,3.098 C 0.8068408,3.098 0,0.995 0,0"
-       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.88696;stroke-dasharray:none;stroke-opacity:1"
-       transform="matrix(0,13.529353,13.529353,0,123.38791,88.961803)"
-       clip-path="url(#clipPath84-8-3)" />
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="296px" height="194px" viewBox="0 0 222 146" version="1.1">
+<g id="surface1">
+<path style="fill:none;stroke-width:0.88696;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 0.00000222885 0.0000457591 C 0.00000222885 -0.995017 0.674977 -1.801987 1.451021 -1.801987 C 2.226049 -1.801987 2.901024 -0.995017 2.901024 0.0000457591 C 2.901024 0.995007 2.121425 3.097989 1.451021 3.097989 C 0.806823 3.097989 0.00000222885 0.995007 0.00000222885 0.0000457591 " transform="matrix(0,38.456282,38.420147,0,86.271679,17.054602)"/>
+</g>
 </svg>
