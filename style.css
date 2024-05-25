@@ -1,0 +1,1141 @@
+
+@font-face {
+    font-family: EthosNova-Regular;
+    src: url("./Fonts/EthosNova-Regular.otf");
+}
+
+@font-face {
+	font-family: EthosNova-Heavy;
+	src: url("./Fonts/EthosNova-Heavy.otf");
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: White;
+    font-family: EthosNova-Regular;
+    margin: 0;
+    padding: 0;
+	}
+
+h1 {
+	font-family: EthosNova-Regular;
+	font-size: 60px;
+
+}
+
+h2 {
+	font-family: EthosNova-Regular;
+	font-size: 22px;
+}
+
+p {
+	font-size: 18px;
+}
+
+
+#space {
+	height: 100vh;
+}
+
+
+
+/* HEADER SUBNAV WITH DROPDOWN */
+
+header {
+	margin: 0 auto;
+}
+
+#logomobile {
+	display: none;
+}
+
+#menu {
+	background: white;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	height: 80px;
+	position: fixed;
+	z-index: 1000;
+}
+
+#logo {
+	background-image: url("./Images/logohorizontal.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 150px;
+	height: auto;
+}
+
+#logo img {
+	width: 30%;
+    height: 80px;
+}
+
+nav {
+	width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+nav ul {
+	padding: 0;
+  	margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	transition: all 0.25s ease;
+	}
+
+nav a {
+	display: flex;
+    align-items: center;
+	height: 50px;
+	padding: 10px 30px;
+	color: #211414;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 30px;
+	text-decoration:none;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display: flex;
+    flex-direction: column;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	background: white;
+	width: 100%;
+	height: 80px;
+	float:none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+.dropdown {
+	display: none;
+}
+
+/* HEADER SUBNAV WITH DROPDOWN */
+
+/* BANNER HOME */
+
+.banner {
+	background-image: url(./Images/Banner1D.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.banner #titlehome {
+	color: #22450A;
+	margin: 0;
+	display: flex;
+	line-height: 90px;
+}
+
+.banner #titlehome {
+    color: #FF7077;
+    width: 30%;
+    height: 80%;
+    margin: 120px 50px 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background: #F6FAC5;
+	}
+
+#titlehome h1 {
+	line-height: 60px;
+}
+
+#titlehome p {
+	font-size: 20px;
+    line-height: 30px;
+    margin: 50px;
+	color: #211414;
+}
+
+.banner #ativo {
+	width: 100%;
+	height: 20%;
+	background-image: url("./Ativos/Ativo1.png");
+	background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* BANNER HOME */
+
+
+
+.grid {
+	height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(29, 110px);
+    gap: 0;
+    row-gap: 8px;
+}
+
+/* OUR SERVICES */
+
+#ourservice {
+	width: 100%;
+	line-height: 32px;
+    direction: ltr;
+	grid-column: 2 / 5;
+	grid-row: 1 / 2;
+}
+
+#ourservice h1, #ourservice h2 {
+	color: #22450A;
+}
+
+#ourservice h2 {
+	font-weight: 100;
+}
+
+/* OUR SERVICES */
+
+
+/* TANK SERVICES */
+
+#tankimg {
+	width: 680px;
+    height: 700px;
+	grid-column: 2 / 6;
+    grid-row: 4 / 9;
+	
+}
+
+#tanktext {
+	height: 350px;
+    width: 100%;
+    grid-column: 6 / 11;
+	grid-row: 4 / 9;
+    color: #22450A;
+    border-bottom: solid 5px #FF7077;
+	border-radius: 2px;
+}
+
+#tanktext h1 {
+	font-family: EthosNova-Heavy;
+	}
+
+#tanktext p {
+margin-left: 40px;
+}
+
+#tanktext p::before {
+	content: url(./Ativos/Bullet.svg);
+	margin-top: 30px;
+	padding-right: 30px;
+	vertical-align: -20%;
+}
+
+/* TANK SERVICES */
+
+
+
+
+/* TRANSPORTATION */
+
+#transpoborder {
+	border-left: solid 5px #FF7077;
+	border-radius: 2px;
+	grid-column: 2 / 2;
+	grid-row: 11 / 19;
+
+}
+
+#box {
+	background-color: #FF7077;
+    width: 800px;
+    height: 680px;
+	grid-column: 3 / 5;
+	grid-row: 11 / 17;
+    position: relative;
+    z-index: 10;
+}
+
+#transpotext {
+	height: 100%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+}
+
+#transpotext h1 {
+	font-family: EthosNova-Heavy;
+	color: #56352C;
+	text-align: left;
+}
+
+#transpotext p {
+	color: white;
+	height: 20px;
+}
+
+#transpotext p::before {
+	content: url(./Ativos/Bullet.svg);
+	margin-top: 30px;
+	padding-right: 30px;
+	vertical-align: -20%;
+}
+
+#transpoimg {
+	height: 1080px;
+    width: 850px;
+	grid-column: 6 / 10;
+	grid-row: 10 / 20;
+    position: relative;
+    z-index: 9;
+	margin-top: 25px;
+	background-image: url("./Images/img3M.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* TRANSPORTATION */
+
+#greenback {
+	background-image: url(./Ativos/Ativo4.png);
+    background-size: cover;
+	background-position: center;
+    grid-column: 1 / 11;
+    grid-row: 18 / 21;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    z-index: 8;
+}
+
+/* WASTE MANAGEMENT */
+
+#wasteimg {
+	width: 680px;
+    height: 860px;
+    background-image: url(./Images/img4D.png);
+    background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
+	grid-column: 2 / 4;
+    grid-row: 19 / 27;
+    position: relative;
+    z-index: 9;
+    margin-top: 45px;
+}
+
+#wastetext {
+	width: 100%;
+    height: 100%;
+    grid-column: 6 / 11;
+    grid-row: 22 / 26;
+    border-bottom: solid 5px #FF7077;
+    border-radius: 2px;
+	margin-top: 85px;
+}
+
+#wastetext h1 {
+	width: 80%;
+	font-family: EthosNova-Heavy;
+	color: #22450A;
+}
+
+#wastetext p {
+	color: #22450A;
+	margin-left: 10vh;
+	height: 30px;
+}
+
+#wastetext p::before {
+	content: url(./Ativos/Bullet.svg);
+	margin-top: 30px;
+	padding-right: 30px;
+	vertical-align: -20%;
+}
+
+
+/* WASTE MANAGEMENT */
+
+/* BANNER */
+
+#banner {
+	width: 100%;
+    height: 300px;
+    background-image: url(./Images/Banner2D.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	grid-column: 1 / 11;
+	grid-row: 27 / 28;
+    margin-top: 50px;
+}
+
+/* FORM */
+
+.contact {
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+	background-color: #FF7077;
+    height: 60vh;
+}
+
+#title {
+	height: 100%;
+    width: 100%;
+    grid-column: 1 / 1;
+    grid-row: 1;
+    margin-bottom: -40px;
+	color: #56352C;
+}
+
+#form {
+	display: grid;
+	grid-template-columns: repeat(4, 300px);
+    gap: 25px;
+	
+}
+
+#fname {
+	height: 60px;
+	grid-column: 1 / 1;
+    grid-row: 2 / 2;
+	background-color: transparent;
+    border: 2px solid #F6FAC5;
+	padding-left: 30px;
+}
+
+#lname {
+	height: 60px;
+	grid-column: 2 / 2;
+    grid-row: 2 / 2;
+	background-color: transparent;
+    border: 2px solid #F6FAC5;
+	padding-left: 30px;
+}
+
+#email {
+	height: 60px;
+	grid-column: 1 / 3;
+    grid-row: 3 / 3;
+	background-color: transparent;
+	border: 2px solid #F6FAC5;
+	padding-left: 30px;
+}
+
+#phone {
+	height: 60px;
+	grid-column: 1 / 3;
+    grid-row: 4 / 4;
+	background-color: transparent;
+	border: 2px solid #F6FAC5;
+	padding-left: 30px;
+}
+
+#textarea {
+	width: 620px;
+	grid-column: 3 / 4;
+    grid-row: 2 / 5;
+	background-color: transparent;
+	border: 2px solid #F6FAC5;
+	padding-left: 30px;
+	padding-top: 20px;
+}
+
+#btn {
+	grid-column: 4 / 4;
+	grid-row: 5 / 5;
+	background-color: transparent;
+	border: 2px solid #F6FAC5;
+	height: 40px;
+    width: 100%;
+    margin-left: 30px;
+	
+}
+
+::placeholder, #btn {
+	font-family: EthosNova-Regular;
+	color: #F6FAC5;
+}
+
+/* FOOTER */
+
+footer {
+	display: grid;
+    grid-template-columns: repeat(3, 630px);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	height: 20vh;
+	background-color: #F6FAC5;
+}
+
+#flogo {
+	width: 100%;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#flogo img {
+	width: 300px;
+    height: 80px;
+}
+
+#infos {
+	font-family: EthosNova-regular;
+	text-align: end;
+	color: #22450A;
+}
+
+#infos h2 {
+	font-size: 28px;
+	font-family: EthosNova-heavy;
+}
+
+#social {
+	text-align: end;
+    width: 80%;
+}
+
+/* FOOTER */
+
+/* PAGE THANKS */
+
+.tnks {
+	background-image: url(./Ativos/Ativo4.png);
+    background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+    flex-direction: column;
+	height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#tnkstext {
+	height: 50%;
+	width: 50%;
+	background-color: #FF7077;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	color: #22450A;
+}
+
+#tnkstext {
+	text-decoration: none;
+    color: #22450A;
+}
+
+/* PAGE THANKS */
+
+
+/* TELA 2K */
+
+@media only screen and (min-width:2000px) and (max-width: 3000px) {
+	.banner #titlehome {
+		justify-content: center;
+	}
+}
+
+/* TELA 2K */
+
+
+/* MENU MOBILE VARIANTS HEIGHT */
+@media only screen and (min-height:100px) and (max-height:680px) {
+	.show {
+        margin-top: 70vh !important;
+    }
+}
+
+@media only screen and (min-height:700px) and (max-height:1080px) {
+	.show {
+        margin-top: 55vh !important;
+    }
+}
+
+/* MENU MOBILE VARIANTS HEIGHT */
+
+
+/* MOBILE ALL */
+@media only screen and (min-width:100px) and (max-width: 1080px) and (max-height: 1000px) {
+	
+	/* MENU MOBILE */
+	
+	.menu {
+		height: 100px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#logomobile {
+		display: block;
+		width: 90%;
+		height: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		direction: ltr;
+	}
+
+	#logomobile img {
+		width: 50%;
+		height: auto;
+	}
+	  
+	  #main-menu {
+		display: none;
+	}
+
+	.dropbtn {
+	  color: white;
+	  padding: 22px;
+	  font-size: 16px;
+	  border: none;
+	  cursor: pointer;
+	  position: relative;
+	  z-index: 1;
+	  background: transparent;
+	  margin-right: 10px;
+	  margin-top: 0px;
+      direction: rtl;
+	}
+
+	
+	embed {
+	  height: 25px;
+      width: 25px;
+	  position: relative;
+	  z-index: -1;
+	}
+	
+	.dropdown {
+	  position: relative;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  width: 100%;
+	  height: 100%;
+	  
+	}
+	
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: white;
+	  min-width: max-content;
+	  z-index: 1;
+	}
+	
+	.dropdown-content a {
+	  color: #56352C;
+	  padding: 30px 45px;
+	  text-decoration: none;
+	  display: block;
+	  font-size: 20px;
+	  border: #383C4B;
+	  font-family: 'EthosNova-Regular';
+      font-weight: bold;
+
+	}
+	
+	.dropdown-content a:hover {background-color: #ddd;}
+	
+	.show {
+	  display:block;
+	  text-align: center;
+	  width: 100%;
+      margin: 0px;
+	}
+
+	.ulmobile {
+		list-style-type: none;
+		width: 100%;
+        margin: 0;
+        padding: 0;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	/* MENU MOBILE */
+
+	#align {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+        align-items: end;
+	}
+
+
+	 /* BANNER */
+
+	.banner {
+		background-image: url(./Images/Banner1M.png);
+		background-position: left;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-start;
+	}
+
+	.banner #titlehome {
+		width: 75%;
+        height: 500px;
+        align-items: center;
+        justify-content: flex-end;
+		margin: 0 0 0 16px;
+        padding: 30px;
+	}
+
+	#titlehome h1 {
+		padding: 0px;
+        font-size: 40px;
+        line-height: 35px;
+	}
+
+	#titlehome p {
+		font-size: 16px;
+		line-height: 20px;
+		margin: 30px;
+		color: #211414;
+	}
+
+	.banner #ativo {
+    	background-size: contain;
+    	background-repeat: no-repeat;
+    	height: 7%;
+	}
+
+	 /* BANNER */
+
+ 	 /* TANK SERVICES */
+
+	.grid {
+		height: auto;
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(1, 100%);
+		grid-template-rows: repeat(13, 300px);
+		gap: 0px;
+		row-gap: 0px;
+	}
+
+	/* OUR SERVICES */
+
+	#ourservice {
+        width: 100%;
+        height: 300px;
+        line-height: 25px;
+        direction: ltr;
+        grid-column: 1 / 1;
+        grid-row: 1 / 2;
+        display: flex;
+        flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: left;
+	}
+
+	#ourservice h1 {
+		font-size: 46px;
+		width: 85%;
+		line-height: 40px;
+	}
+
+	#ourservice h2 {
+		font-size: 16px;
+    	width: 80%;
+	}
+
+	/* OUR SERVICES */
+	
+	#tankimg {
+		width: 100%;
+		height: 600px;
+		grid-column: 1;
+		grid-row: 3 / 4;
+		margin-top: 0;
+		margin-left: 0px;
+		border-top: solid 5px #FF7077;
+        border-radius: 2px;
+	}
+	
+
+	#tankimg img {
+        width: 100%;
+        height: 100%;
+    }
+
+	#tanktext {
+        width: 100%;
+		height: 300px;
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+		border: none;
+    }
+
+	#tanktext h1 {
+		font-size: 42px;
+		width: 90%;
+		margin: 0;
+	}
+
+	#tanktext p {
+		margin-left: 0;
+		width: 90% !important;
+		font-size: 11px;
+		line-height: 15px;
+        height: 20px;
+	}
+
+	#tanktext p::before {
+		display: inline-block;
+		width: 30px;
+        height: 20px;
+		padding-right: 5px !important;
+    	vertical-align: -40% !important;
+	}
+
+	/* TANK SERVICES */
+
+	/* TRANSPORTATION */
+
+	#box {
+        width: 100%;
+        height: 600px;
+        grid-column: 1;
+        grid-row: 5 / 7;
+        margin-top: 0;
+    }
+
+	#transpotext {
+		height: 500px;
+	}
+
+	#transpotext h1 {
+		margin-left: 0;
+        text-align: left;
+		font-size: 35px;
+	}
+
+	#transpotext p {
+		height: 20px;
+        width: 90% !important;
+        margin-left: 10px;
+        font-size: 11px;
+        line-height: 20px;
+	}
+
+	#transpotext p::before {
+		display: inline-block;
+		width: 30px;
+        height: 20px;
+		padding-right: 5px !important;
+    	vertical-align: -40% !important;
+	}
+
+	#aligntranspo {
+		justify-content: center;
+        align-items: baseline;
+	}
+
+	#transpoimg {
+        height: 600px;
+        width: 100%;
+        grid-column: 1;
+		grid-row: 7 / 8;
+        margin-top: 0;
+    }
+
+	#transpoimg img {
+        width: 100%;
+        height: 100%;
+    }
+
+	#transpoborder {
+		display: none;
+	}
+
+	/* TRANSPORTATION */
+
+	#greenback {
+        grid-column: 1 / 1;
+		grid-row: 12 / 12;
+        width: 100%;
+        height: 300px;
+        position: relative;
+        z-index: 8;
+    }
+
+	/* WASTE MANAGEMENT */
+
+	#wasteimg {
+        width: 100%;
+        height: 600px;
+        grid-column: 1;
+        grid-row: 10 / 12;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+	#alignwaste {
+		height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+		align-items: baseline;
+	}
+
+	#wastetext {
+        width: 100%;
+        grid-column: 1;
+        grid-row: 9 / 9;
+        margin-top: 0;
+        height: 300px;
+        border: none;
+    }
+
+	#wastetext h1 {
+		width: 90%;
+        text-align: left;
+        height: 100px;
+        font-size: 32px;
+        line-height: 40px;
+		margin-bottom: 0;
+	}
+
+	#wastetext p {
+        margin-left: 20px;
+        width: 90% !important;
+        height: 20px;
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+	#wastetext p::before {
+		display: inline-block;
+		width: 30px;
+        height: 20px;
+		padding-right: 5px !important;
+    	vertical-align: -40% !important;
+	}
+
+	/* WASTE MANAGEMENT */
+
+	#banner {
+		background-image: url("./Images/Banner2M.png");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+        width: 100%;
+        grid-column: 1;
+        grid-row: 13 / 13;
+        margin-top: 0;
+        height: 300px;
+    }
+
+
+/* FORM */
+
+.contact {
+	height: 700px;
+	justify-content: flex-start;
+}
+
+#form {
+	width: 80%;
+	height: 85%;
+    display: grid;
+	grid-template-columns: repeat(1, 100%);
+	grid-template-rows: repeat(11, 50px);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+	height: 100%;
+    width: 100%;
+    grid-column: 1 / 1;
+	grid-row: 1;
+	text-align: center;
+	color: #56352C;
+	margin-bottom: 0px;
+}
+
+#title h1 {
+	font-size: 46px;
+}
+
+
+#fname {
+	height: 100%;
+    width: 100%;
+	text-align: center;
+    grid-column: 1;
+    grid-row: 3;
+	padding-left: 0;
+    
+}
+
+#lname {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+    grid-column: 1;
+    grid-row: 4;
+	padding-left: 0;
+}
+
+#email {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+    grid-column: 1;
+    grid-row: 5;
+	padding-left: 0;
+}
+
+#phone {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+    grid-column: 1;
+    grid-row: 6; 
+	padding-left: 0;
+}
+
+#textarea {
+    width: 100%;
+	height: 100%;
+	text-align: center;
+    grid-column: 1;
+    grid-row: 7 / 10;
+	padding-top: 0;
+	padding-left: 0;
+}
+
+#btn {
+    grid-column: 1;
+    grid-row: 10;
+	height: 100%;
+    width: 102%;
+	margin-left: 0;
+	margin-top: 0;
+    
+}
+
+::placeholder {
+	padding-top: 20px;
+	font-size: 16px;
+}
+
+/* FOOTER */
+
+footer {
+    display: grid;
+	grid-template-columns: repeat(1, 100%);
+    width: 100%;
+    height: 50vh;
+}
+
+#flogo {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#flogo img {
+	width: 220px;
+    height: 60px;
+}
+
+#infos {
+    text-align: center;
+	grid-column: 1;
+	grid-row: 2;
+}
+
+#infos h2 {
+	font-size: 20px;
+}
+
+#infos p {
+	font-size: 11px;
+}
+
+#social {
+	text-align: center;
+	grid-column: 1;
+	grid-row: 3;
+	width: 100%;
+	font-size: 11px;
+}
+
+/**/
+
+}
+
+/* MOBILE ALL */
