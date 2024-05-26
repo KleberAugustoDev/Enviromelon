@@ -657,6 +657,11 @@ footer {
 		direction: ltr;
 	}
 
+	#logomobile a {
+		text-align: center;
+		align-content: center;
+	}
+
 	#logomobile img {
 		width: 50%;
 		height: auto;
