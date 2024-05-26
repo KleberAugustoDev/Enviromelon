@@ -357,16 +357,24 @@ margin-left: 40px;
 
 /* TRANSPORTATION */
 
+#aligngreen {
+	height: 350px;
+	width: 100%;
+	grid-column: 1 / 11;
+    grid-row: 18 / 21;
+	position: relative;
+    z-index: 8;
+	display: flex;
+	justify-content: center;
+}
+
 #greenback {
 	background-image: url(./Ativos/Ativo4.png);
     background-size: cover;
 	background-position: center;
-    grid-column: 1 / 11;
-    grid-row: 18 / 21;
     width: 100%;
     height: 350px;
-    position: relative;
-    z-index: 8;
+    
 }
 
 /* WASTE MANAGEMENT */
@@ -967,14 +975,25 @@ footer {
 
 	/* TRANSPORTATION */
 
-	#greenback {
-        grid-column: 1 / 1;
+	#aligngreen {
+		height: 300px;
+		grid-column: 1 / 1;
 		grid-row: 12 / 12;
         width: 100%;
-        height: 300px;
-        position: relative;
-        z-index: 8;
-    }
+		position: relative;
+		z-index: 8;
+		display: flex;
+		justify-content: center;
+	}
+	
+	#greenback {
+		background-image: url(./Ativos/Ativo4.png);
+		background-size: cover;
+		background-position: center;
+		width: 100%;
+		height: 100px;
+		
+	}
 
 	/* WASTE MANAGEMENT */
 
@@ -984,7 +1003,7 @@ footer {
         grid-column: 1;
         grid-row: 10 / 12;
         margin-left: 0;
-        margin-top: 50px;
+        margin-top: 0;
     }
 
 	#alignwaste {
@@ -1017,7 +1036,7 @@ footer {
 	#wastetext p {
         margin-left: 20px;
         width: 90% !important;
-        height: 20px;
+		height: 10px;
 		font-size: 14px;
         line-height: 15px;
     }
