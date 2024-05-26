@@ -882,14 +882,14 @@ footer {
 
 	#tanktext h1 {
 		font-size: 42px;
-		width: 90%;
+		width: 95%;
 		margin-bottom: 20px;
 	}
 
 	#tanktext p {
 		margin-left: 0;
-		width: 90% !important;
-		font-size: 14px;
+		width: 95% !important;
+        font-size: 13px;
 		line-height: 15px;
         height: 20px;
 	}
@@ -955,7 +955,7 @@ footer {
         flex-direction: column;
 		justify-content: center;
         align-items: baseline;
-        width: 90%;
+		width: 95%;
 		height: 100%;
 	}
 
