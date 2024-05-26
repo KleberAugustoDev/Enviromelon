@@ -790,6 +790,7 @@ footer {
 		padding: 0px;
         font-size: 40px;
         line-height: 35px;
+		width: 100%;
 	}
 
 	#titlehome p {
@@ -797,6 +798,7 @@ footer {
 		line-height: 20px;
 		margin: 30px;
 		color: #211414;
+		width: 100%;
 	}
 
 	.banner #ativo {
