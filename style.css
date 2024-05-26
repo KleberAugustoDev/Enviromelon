@@ -549,7 +549,7 @@ footer {
 
 #flogo {
 	background-image: url("./Images/logohorizontal.svg");
-	background-size: cover;
+	background-size: 250px 150px;
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -561,7 +561,7 @@ footer {
 
 #infos {
 	font-family: EthosNova-regular;
-	text-align: end;
+	text-align: center;
 	color: #22450A;
 }
 
@@ -571,7 +571,7 @@ footer {
 }
 
 #social {
-	text-align: end;
+	text-align: center;
     width: 80%;
 }
 
