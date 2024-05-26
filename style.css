@@ -436,7 +436,7 @@ margin-left: 40px;
 #banner {
 	width: 100%;
     height: 300px;
-    background-image: url(./Images/Banner2D.png);
+    background-image: url(./Images/Banner1D.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -967,6 +967,8 @@ footer {
         grid-column: 1;
 		grid-row: 7 / 8;
         margin-top: 0;
+		border-top: solid 5px #71C920;
+		border-radius: 2px;
     }
 
 	#transpoimg img {
@@ -1010,6 +1012,8 @@ footer {
         grid-row: 10 / 12;
         margin-left: 0;
         margin-top: 0;
+		border-top: solid 5px #FF7077;
+        border-radius: 2px;
     }
 
 	#alignwaste {
