@@ -1178,14 +1178,17 @@ footer {
 }
 
 #flogo {
-	background-image: url("./Images/logovertical.svg");
-	background-size: cover;
+	background-image: url(./Images/logovertical.svg);
+	background-size: 130px 120px;
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 100%;
+	height: 150px;
 	grid-column: 1;
 	grid-row: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
