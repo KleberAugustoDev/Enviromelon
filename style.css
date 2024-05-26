@@ -1214,8 +1214,9 @@ footer {
 	font-size: 11px;
 }
 
-/**/
-
+#social img {
+	height: 35px;
+}
 }
 
 /* MOBILE ALL */
