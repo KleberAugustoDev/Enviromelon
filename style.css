@@ -41,7 +41,7 @@ p {
 }
 
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1366px) {
 
 /* HEADER SUBNAV WITH DROPDOWN */
 
@@ -612,6 +612,7 @@ footer {
 
 /* PAGE THANKS */
 
+}
 
 /* TELA 2K */
 
@@ -622,6 +623,122 @@ footer {
 }
 
 /* TELA 2K */
+
+/* NOTEBOOKS */
+
+@media only screen and (min-width:1366px) and (max-width: 1900px) {
+	
+	/* BANNER */
+
+	#titlehome h1 {
+        line-height: 50px;
+        font-size: 50px;
+    }
+
+	#titlehome p {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+	/* BANNER */
+
+	/* GRID */
+	.grid {
+        grid-template-rows: repeat(24, 110px);
+    }
+	/* GRID */
+	/* TANK SERVICES */
+
+	#tankimg {
+        width: 480px;
+        height: 500px;
+    }
+
+	/* TANK SERVICES */
+
+	/* TRANSPORTATION */
+
+	#box {
+        width: 580px;
+        height: 600px;
+		grid-row: 9 / 17;
+    }
+
+	#transpotext h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+	#transpotext p {
+		font-size: 17px;
+        line-height: 23px;
+	}
+
+	#transpoimg {
+        height: 900px;
+        width: 600px;
+        grid-row: 8 / 18;
+        margin-top: 50px;
+    }
+
+	#transpoborder {
+        grid-row: 9 / 16;
+    }
+
+	/* TRANSPORTATION */
+
+	/* ALIGN GREEN */
+    #aligngreen {
+        height: 350px;
+        width: 100%;
+		grid-column: 1 / 11;
+        grid-row: 15 / 21;
+    }
+
+	#greenback {
+		height: 250px;
+	}
+
+	/* ALIGN GREEN */
+
+	/* WASTE MANAGEMENT */
+
+	#wasteimg {
+        width: 480px;
+        height: 600px;
+        grid-column: 2 / 4;
+        grid-row: 16 / 19;
+        margin-top: 15px;
+    }
+
+	#wastetext {
+        height: 85%;
+        margin-top: 0;
+		grid-row: 17 / 22;
+    }
+
+	#wastetext h1 {
+        width: 90%;
+    }
+
+	/* WASTE MANAGEMENT */
+
+	/* BANNER */
+
+	#banner {
+        grid-row: 22 / 24;
+    }
+
+	/* FORM */
+
+	.contact {
+        height: 65vh;
+		justify-content: flex-start;
+    }
+
+}
+
+/* NOTEBOOKS */
 
 
 /* MENU MOBILE VARIANTS HEIGHT */
