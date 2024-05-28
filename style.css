@@ -539,7 +539,7 @@ margin-left: 40px;
 
 footer {
 	display: grid;
-    grid-template-columns: repeat(3, 630px);
+	grid-template-columns: repeat(3, 33%);
     width: 100%;
     align-items: center;
     justify-content: center;
