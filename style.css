@@ -479,7 +479,6 @@ margin-left: 40px;
     grid-row: 2 / 2;
 	background-color: transparent;
     border: 2px solid #F6FAC5;
-	padding-left: 30px;
 }
 
 #lname {
@@ -488,7 +487,6 @@ margin-left: 40px;
     grid-row: 2 / 2;
 	background-color: transparent;
     border: 2px solid #F6FAC5;
-	padding-left: 30px;
 }
 
 #email {
@@ -497,7 +495,6 @@ margin-left: 40px;
     grid-row: 3 / 3;
 	background-color: transparent;
 	border: 2px solid #F6FAC5;
-	padding-left: 30px;
 }
 
 #phone {
@@ -506,7 +503,6 @@ margin-left: 40px;
     grid-row: 4 / 4;
 	background-color: transparent;
 	border: 2px solid #F6FAC5;
-	padding-left: 30px;
 }
 
 #textarea {
@@ -528,10 +524,13 @@ margin-left: 40px;
 	margin-left: 9px;
 }
 
+::placeholder {
+	padding-left: 30px;
+}
+
 ::placeholder, #btn {
 	font-family: EthosNova-Regular;
 	color: #F6FAC5;
-	padding-left: 30px;
 }
 
 /* FOOTER */
