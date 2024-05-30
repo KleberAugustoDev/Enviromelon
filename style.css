@@ -35,12 +35,6 @@ p {
 	font-size: 18px;
 }
 
-
-#space {
-	height: 100vh;
-}
-
-
 @media only screen and (min-width: 100px) and (max-width: 4000px) {
 
 /* HEADER SUBNAV WITH DROPDOWN */
