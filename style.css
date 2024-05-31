@@ -35,6 +35,8 @@ p {
 	font-size: 18px;
 }
 
+
+/* ALL RESOLUTIONS */
 @media only screen and (min-width: 100px) and (max-width: 4000px) {
 
 /* HEADER SUBNAV WITH DROPDOWN */
@@ -569,7 +571,6 @@ footer {
 /* FOOTER */
 
 /* PAGE THANKS */
-
 .tnks {
 	background-image: url(./Ativos/Ativo4.png);
     background-size: cover;
@@ -599,8 +600,9 @@ footer {
 	text-decoration: none;
     color: #22450A;
 }
-
 /* PAGE THANKS */
+
+/* ALL RESOLUTIONS */
 
 }
 
@@ -1197,7 +1199,7 @@ footer {
 		width: 100%;
 		display: grid;
 		grid-template-columns: repeat(1, 100%);
-		grid-template-rows: repeat(11, 250px);
+		grid-template-rows: repeat(14, 200px);
 		gap: 0px;
 		row-gap: 0px;
 	}
@@ -1210,7 +1212,7 @@ footer {
         line-height: 25px;
         direction: ltr;
         grid-column: 1 / 1;
-        grid-row: 1 / 2;
+		grid-row: 1 / 2;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1219,13 +1221,13 @@ footer {
     }
 
 	#ourservice h1 {
-		font-size: 46px;
-		width: 90%;
-		line-height: 40px;
+		font-size: 45px;
+        width: 90%;
+        line-height: 30px;
 	}
 
 	#ourservice h2 {
-		font-size: 16px;
+		font-size: 15px;
     	width: 90%;
 	}
 
@@ -1235,7 +1237,7 @@ footer {
 		width: 100%;
         height: 100%;
         grid-column: 1;
-        grid-row: 3 / 5;
+		grid-row: 4 / 6;
 		margin-top: 0;
 		margin-left: 0px;
 		border-top: solid 5px #FF7077;
@@ -1247,35 +1249,35 @@ footer {
 	}
 
 	#aligntank {
-		height: 100%;
-        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: end;
-		line-height: 10px;
+        width: 100%;
+        height: 100%;
+        line-height: 30px;
 	}
 
 	#tanktext {
         width: 100%;
         height: 100%;
         grid-column: 1 / 1;
-        grid-row: 2 / 3;
+        grid-row: 2 / 4;
         border: none;
     }
 
 	#tanktext h1 {
-		font-size: 42px;
-		width: 95%;
-		margin-bottom: 20px;
+		font-size: 32px;
+        width: 95%;
+        margin-bottom: 30px;
 	}
 
 	#tanktext p {
 		margin-left: 0;
-		width: 95% !important;
-        font-size: 13px;
-		line-height: 15px;
-        height: 15px;
+        width: 95% !important;
+        font-size: 12px;
+        line-height: 20px;
+        height: 20px;
 	}
 
 	#tanktext p::before {
@@ -1299,21 +1301,23 @@ footer {
         width: 100%;
         height: 100%;
         grid-column: 1;
-        grid-row: 5 / 7;
+		grid-row: 6 / 9;
         margin-top: 0;
     }
 
 	#transpotext h1 {
 		margin-left: 0;
         text-align: left;
-		font-size: 35px;
+        font-size: 32px;
+        margin-bottom: 30px;
+        line-height: 33px;
 	}
 
 	#transpotext p {
 		height: 20px;
         width: 95% !important;
         margin-left: 10px;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 20px;
 	}
 
@@ -1333,17 +1337,18 @@ footer {
 	#aligntranspo {
 		display: flex;
         flex-direction: column;
-		justify-content: center;
+        justify-content: center;
         align-items: baseline;
-		width: 95%;
-		height: 100%;
+        width: 95%;
+        height: 100%;
+        line-height: 30px;
 	}
 
 	#transpoimg {
         height: 100%;
         width: 100%;
         grid-column: 1;
-        grid-row: 7 / 9;
+		grid-row: 9 / 11;
         margin-top: 0;
 		border-top: solid 5px #71C920;
 		border-radius: 2px;
@@ -1379,7 +1384,7 @@ footer {
 		width: 100%;
         height: 100%;
         grid-column: 1;
-        grid-row: 10 / 12;
+		grid-row: 13 / 15;
         margin-left: 0;
         margin-top: 0;
 		border-top: solid 5px #FF7077;
@@ -1391,34 +1396,33 @@ footer {
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
 	}
 
 	#wastetext {
-        width: 100%;
+		width: 100%;
         grid-column: 1;
-        grid-row: 9 / 10;
+        grid-row: 11 / 13;
         margin-top: 0;
-        height: 300px;
+        height: 100%;
         border: none;
     }
 
 	#wastetext h1 {
 		width: 90%;
         text-align: left;
-		height: 70px;
-        font-size: 30px;
-        line-height: 40px;
-		margin-bottom: 0;
+        font-size: 32px;
+        line-height: 33px;
+        margin-bottom: 30px;
 	}
 
 	#wastetext p {
 		margin-left: 10px;
         width: 95% !important;
-        height: 2px;
-        font-size: 13px;
-        line-height: 15px;
+        height: 20px;
+        font-size: 12px;
+        line-height: 20px;
     }
 
 	#wastetext p::before {
@@ -1444,7 +1448,7 @@ footer {
 /* FORM */
 
 .contact {
-	height: 700px;
+	height: 100%;
 	justify-content: flex-start;
 }
 
@@ -1457,7 +1461,7 @@ footer {
     gap: 20px;
     align-items: center;
     justify-content: center;
-	margin-left: -7px;
+	
 }
 
 #title {
@@ -1533,6 +1537,7 @@ footer {
 }
 
 ::placeholder {
+	padding-left: 0px;
 	padding-top: 20px;
 	font-size: 16px;
 }
