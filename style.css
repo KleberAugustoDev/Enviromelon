@@ -1218,6 +1218,7 @@ footer {
         align-items: center;
         justify-content: center;
         text-align: left;
+		margin-top: 30px;
     }
 
 	#ourservice h1 {
